@@ -406,12 +406,16 @@
 .about .about-item-image {
     position: relative;
     background: var(--bs-light);
-    background-image: url(../img/about-bg.png);
+    /***background-image: url(../img/about-bg.png);***/
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
 }
+
+
+
+
 
 .about .about-item-image .img-1 {
     margin-bottom: 250px; 
@@ -429,6 +433,10 @@
     z-index: 3;
 }
 
+
+
+
+
 .about .about-item-image::before {
     width: 80%;
     height: 80%;
@@ -437,12 +445,18 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 2px solid;
-    border-style: dotted;
-    border-color: var(--bs-white);
-    background: var(--bs-primary);
+    
+    /* Marco azul más grueso */
+    border: 10px solid var(--bs-primary); /* antes 2px */
+    border-style: solid; /* o dotted si prefieres punteado */
+    
+    /* Sin fondo sólido */
+    background: transparent;
+
     z-index: 2;
 }
+
+
 
 .about .about-item-image .about-item-image-content {
     width: 55%;
