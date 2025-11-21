@@ -446,9 +446,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     
-    /* Marco azul más grueso */
-    border: 10px solid var(--bs-primary); /* antes 2px */
-    border-style: solid; /* o dotted si prefieres punteado */
+
+    border: 9px solid var(--bs-primary);
+    border-style: solid; 
     
     /* Sin fondo sólido */
     background: transparent;
